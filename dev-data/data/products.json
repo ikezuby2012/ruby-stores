@@ -168,7 +168,7 @@
     "price": 899,
     "category": "apple phone",
     "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "imageCover": "iphone12-pro(1).jpg",
+    "imageCover": "iphone12-pro1.jpg",
     "quantity": 15,
     "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
   },

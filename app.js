@@ -22,7 +22,7 @@ app.use((req, res, next) => {
     req.requestTime = new Date().toISOString();
     next();
 });
-app.use(express.static('public'));
+app.use("/images",express.static('public'));
 
 app.use("/api/v1/stores", productRoute);
 module.exports = app;
