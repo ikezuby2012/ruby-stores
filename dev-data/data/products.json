@@ -1,0 +1,263 @@
+[
+  {
+    "name": "iphone 8",
+    "ratingsAverage": 3.2,
+    "ratingsQuality": 32,
+    "price": 337,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone8-1.jpg",
+    "images": ["tour-1-1.jpg", "tour-1-2.jpg", "tour-1-3.jpg"]
+  },
+  {
+    "name": "iphone 8 pro",
+    "ratingsAverage": 3.4,
+    "ratingsQuality": 34,
+    "price": 357,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone8-pro.jpg",
+    "images": ["tour-1-1.jpg", "tour-1-2.jpg", "tour-1-3.jpg"]
+  },
+  {
+    "name": "iphone 8 pro max",
+    "ratingsAverage": 3.7,
+    "ratingsQuality": 37,
+    "price": 377,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone8-pro-max.jpg",
+    "images": ["tour-1-1.jpg", "tour-1-2.jpg", "tour-1-3.jpg"]
+  },
+  {
+    "name": "iphone 7 plus",
+    "ratingsAverage": 3.1,
+    "ratingsQuality": 23,
+    "price": 287,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone-7-plus.jpg",
+    "quantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone x",
+    "ratingsAverage": 3.8,
+    "ratingsQuality": 23,
+    "price": 487,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone-x.jpg",
+    "quantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone x-mas",
+    "ratingsAverage": 4.9,
+    "ratingsQuality": 45,
+    "price": 479,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone-x-mas.jpg",
+    "quantity": 5,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone x-mas pro",
+    "ratingsAverage": 2.5,
+    "ratingsQuality": 23,
+    "price": 479,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphonex-mas-pro.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "macbook siena",
+    "ratingsAverage": 4.8,
+    "ratingsQuality": 43,
+    "price": 1999,
+    "category": "apple laptop",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "laptop1.jpg",
+    "quantity": 8,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "macbook siena 2017",
+    "ratingsAverage": 4.7,
+    "ratingsQuality": 33,
+    "price": 1699,
+    "category": "apple laptop",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "laptop2.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "macbook m1 2019",
+    "ratingsAverage": 4.3,
+    "ratingsQuality": 33,
+    "price": 1399,
+    "category": "apple laptop",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "laptop3.jpg",
+    "quantity": 15,
+    "images": ["laptop1.jpg", "laptop2.jpg", "laptop4.jpg"]
+  },
+  {
+    "name": "macbook m1 2020",
+    "ratingsAverage": 4.8,
+    "ratingsQuality": 37,
+    "price": 1699,
+    "category": "apple laptop",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "laptop4.jpg",
+    "quantity": 15,
+    "images": ["laptop1.jpg", "laptop2.jpg", "laptop3.jpg"]
+  },
+  {
+    "name": "iphone 11 pro",
+    "ratingsAverage": 4.5,
+    "ratingsQuality": 23,
+    "price": 579,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone11-pro.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone xr",
+    "ratingsAverage": 4.2,
+    "ratingsQuality": 43,
+    "price": 679,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone-xr.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone 12",
+    "ratingsAverage": 4.2,
+    "ratingsQuality": 31,
+    "price": 699,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone12.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone 12 pro",
+    "ratingsAverage": 4.7,
+    "ratingsQuality": 39,
+    "price": 899,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone12-pro.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone 12 pro gold",
+    "ratingsAverage": 4.7,
+    "ratingsQuality": 39,
+    "price": 899,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone12-pro(1).jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone 12 pro-max",
+    "ratingsAverage": 4.7,
+    "ratingsQuality": 39,
+    "price": 899,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone12-pro-max.jpg",
+    "quantity": 15,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "series 1",
+    "ratingsAverage": 3.2,
+    "ratingsQuality": 39,
+    "price": 459,
+    "category": "smart watch",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "series1.jpg",
+    "quantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "series 2",
+    "ratingsAverage": 3.5,
+    "ratingsQuality": 39,
+    "price": 499,
+    "category": "smart watch",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "series2.jpg",
+    "quantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "series 3",
+    "ratingsAverage": 3.9,
+    "ratingsQuality": 39,
+    "price": 599,
+    "category": "smart watch",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "tour-2-cover.jpg",
+    "quantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "series 4",
+    "ratingsAverage": 4.7,
+    "ratingsQuality": 42,
+    "price": 699,
+    "category": "smart watch",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "series4.jpg",
+    "quantity": 7,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "iphone 11",
+    "ratingsAverage": 3.5,
+    "ratingsQuality": 37,
+    "price": 799,
+    "category": "apple phone",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "iphone11-pro.jpg",
+    "quantity": 7,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "series 5",
+    "ratingsAverage": 4.4,
+    "ratingsQuality": 42,
+    "price": 699,
+    "category": "smart watch",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "series5.jpg",
+    "quantity": 4,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  },
+  {
+    "name": "series 6",
+    "ratingsAverage": 4.4,
+    "ratingsQuality": 42,
+    "price": 759,
+    "category": "smart watch",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "series6.jpg",
+    "quantity": 4,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"]
+  }
+]
