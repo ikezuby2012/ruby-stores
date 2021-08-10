@@ -11,7 +11,7 @@ router.route("/getPopularProducts").get(getPopularProducts, getAllProducts);
 
 router.route("/").get(getAllProducts).post(createProduct);
 router.route("/:id").get(getProduct).patch(updateProduct).delete(deleteProduct);
-router.route("/:category").get(getCategory);
+router.route("/category/:category").get(getCategory);
 
 
 module.exports = router;

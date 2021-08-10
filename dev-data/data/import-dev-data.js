@@ -13,7 +13,7 @@ mongoose.connect(process.env.DATABASE_LOCAL, {
     useCreateIndex: true,
     useFindAndModify: false
 }).then(() => {
-   console.log("database connected");
+    console.log("database connected");
 });
 
 //READ JSON FILE
@@ -24,7 +24,7 @@ const importData = async () => {
     try {
         await Product.create(products);
         console.log("DB loaded successfully");
-    }catch(err) {
+    } catch (err) {
         console.log(err)
     }
     process.exit(1);
@@ -39,7 +39,7 @@ const deleteData = async () => {
     process.exit(1);
 };
 
-if (process.argv[2] === "--import"){
+if (process.argv[2] === "--import") {
     importData();
 }
 if (process.argv[2] === "--delete") {
