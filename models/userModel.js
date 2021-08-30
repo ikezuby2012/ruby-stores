@@ -34,6 +34,7 @@ const UserSchema = new Schema({
             message: "passwords are not the same!"
         }
     },
+    role: {},
     active: {
         type: Boolean,
         default: true,

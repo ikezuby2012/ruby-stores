@@ -26,5 +26,7 @@ app.use((req, res, next) => {
 app.use("/images", express.static('public'));
 
 app.use("/api/v1/stores", productRoute);
-app.use(`/api/v1/user`, userRoute)
+app.use(`/api/v1/user`, userRoute);
+
+require("./controllers/errorController");
 module.exports = app;

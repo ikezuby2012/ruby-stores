@@ -1,13 +1,13 @@
 const crypto = require("crypto");
-const {promisify} = require("util");
+const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
 
 const AppError = require("../utils/AppError");
 const catchAsync = require("../utils/CatchAsync");
 
-const signToken = (id) => 
-    jwt.sign({id}, process.env.JWT_SECRET, {
+const signToken = (id) =>
+    jwt.sign({ id }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRES_IN
     });
 
@@ -23,13 +23,13 @@ exports.signUp = catchAsync(async (req, res, next) => {
     const token = signToken(newUser._id);
 
     const cookieOptions = {
-        expires: new Date(Date.now + process.env.JWT_COOKIE_EXPIRES *24 *60*60*1000),
+        expires: new Date(Date.now + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
         httpOnly: true
     }
     if (process.env.NODE_ENV === "production") cookieOptions.secure = true;
     res.cookie("jwt", token, cookieOptions);
     newUser.password = undefined;
-    
+
     res.status(200).json({
         status: "success",
         token,
@@ -39,24 +39,33 @@ exports.signUp = catchAsync(async (req, res, next) => {
     });
 });
 
-exports.login = catchAsync(async (req,res,next) => {
-    const {email, password} = req.body;
+exports.login = catchAsync(async (req, res, next) => {
+    const { email, password } = req.body;
     // check if email and password exist
     if (!email || !password) {
         return next(new AppError("please provide an email and password", 400));
-    } 
+    }
     //check if user exist and password is correct
-    const user = await User.findOne({email: email}).select("+password");
+    const user = await User.findOne({ email: email }).select("+password");
 
     if (!user || !(await user.correctPassword(password, user.password))) {
-        return next(new AppError("incorrect email or password!",401));
+        return next(new AppError("incorrect email or password!", 401));
     }
 
     //send token to client
     const token = signToken(user._id);
+    const cookieOptions = {
+        expires: new Date(Date.now + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
+        httpOnly: true
+    }
+    if (process.env.NODE_ENV === "production") cookieOptions.secure = true;
+    res.cookie("jwt", token, cookieOptions);
+    user.password = undefined;
+
     res.status(200).json({
         status: "success",
-        token
+        token,
+        user
     });
 });
 
@@ -65,14 +74,14 @@ exports.logout = catchAsync(async (req, res, next) => {
         expires: new Date(Date.now + 10 * 1000),
         httpOnly: true
     });
-    res.status(200).json({ status: "success"});
+    res.status(200).json({ status: "success" });
 });
 
-exports.protect = catchAsync(async (req,res,next) => {
+exports.protect = catchAsync(async (req, res, next) => {
     let token;
-    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")){
+    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")) {
         token = req.headers.authorization.split(" ")[1];
-    } else if (req.cookie.jwt){
+    } else if (req.cookie.jwt) {
         token = req.cookie.jwt;
     }
     if (!token) {
@@ -83,7 +92,7 @@ exports.protect = catchAsync(async (req,res,next) => {
 
     //check if user still exist
     const currentUser = await User.findById(decoded.id);
-    if(!currentUser) {
+    if (!currentUser) {
         return next(new AppError("the token belonging to the user does not exist", 401));
     }
 
@@ -97,15 +106,15 @@ exports.protect = catchAsync(async (req,res,next) => {
     next();
 });
 
-exports.forgetPassword = catchAsync(async (req,res,next) => {
+exports.forgetPassword = catchAsync(async (req, res, next) => {
     //get user based on posted email
-    const user = await User.findOne({email: req.body.email});
-    if(!user) {
+    const user = await User.findOne({ email: req.body.email });
+    if (!user) {
         return next(new AppError("there is no user with that email", 404));
     }
     //get the random token
     const resetToken = user.createPasswordResetToken();
-    await user.save({validateBeforeSave: false});
+    await user.save({ validateBeforeSave: false });
     //<-- send it back as an email
     const resetURL = `${req.protocol}://${req.get("host")}/api/v1/users/resetPassword/${resetToken}`;
 
@@ -119,6 +128,6 @@ exports.forgetPassword = catchAsync(async (req,res,next) => {
     });
 });
 
-exports.updatePassword = catchAsync(async (req,res,next) => {
+exports.updatePassword = catchAsync(async (req, res, next) => {
 
 });

@@ -7,16 +7,17 @@ process.on("uncaughtException", err => {
     process.exit(1);
 });
 
-dotenv.config({path: "./config.env"});
-const app = require ("./app");
+dotenv.config({ path: "./config.env" });
+const app = require("./app");
 
-if (process.env.NODE_ENV === "development"){
+if (process.env.NODE_ENV === "development") {
     mongoose.connect(process.env.DATABASE_LOCAL, {
         useNewUrlParser: true,
         useCreateIndex: true,
-        useFindAndModify: true
+        useFindAndModify: true,
+        // useUnifiedTopology: true
     }).then(() => {
-        console.log(`database connected successfully`);
+        console.log(`local database connected successfully`);
     })
 } else {
     mongoose.connect(process.env.DATABASE_ATLAS, {
