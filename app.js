@@ -15,6 +15,7 @@ const errorHandler = require("./controllers/errorController");
 const cartRoute = require("./routes/cartRoute");
 const orderRoute = require("./routes/orderRoute");
 const contactRoute = require("./routes/contactRoute");
+const AppError = require("./utils/AppError");
 
 //cors
 app.use(cors());

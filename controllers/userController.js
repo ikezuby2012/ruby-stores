@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const User = require("../models/userModel");
 const AppError = require("../utils/AppError");
-const catchAsync = require("../utils/catchAsync");
-const APIFeatures = require("../utils/apiFeatures");
+const catchAsync = require("../utils/CatchAsync");
+const APIFeatures = require("../utils/ApiFeatures");
 const factory = require("./handleFactory");
 
 exports.getAllUsers = catchAsync(async (req, res, next) => {
