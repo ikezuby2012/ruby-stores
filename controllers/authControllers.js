@@ -11,31 +11,33 @@ const signToken = (id) =>
         expiresIn: process.env.JWT_EXPIRES_IN
     });
 
-exports.signUp = catchAsync(async (req, res, next) => {
+exports.signup = catchAsync(async (req, res, next) => {
+    //we need to specify a special route for creating administrative user
+    //to prevent malicious user from becoming admin
+
     const newUser = await User.create({
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        passwordConfirm: req.body.passwordConfirm
+        passwordConfirm: req.body.passwordConfirm,
+        // role: req.body.role,
     });
 
-    const url = `${req.protocol}://${req.get('host')}/me`;
     const token = signToken(newUser._id);
-
     const cookieOptions = {
-        expires: new Date(Date.now + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
+        expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
+        // secure: true, // only works on https 
         httpOnly: true
-    }
+    };
     if (process.env.NODE_ENV === "production") cookieOptions.secure = true;
     res.cookie("jwt", token, cookieOptions);
+
     newUser.password = undefined;
 
-    res.status(200).json({
+    res.status(201).json({
         status: "success",
         token,
-        data: {
-            user: newUser
-        }
+        user: newUser
     });
 });
 
@@ -78,31 +80,34 @@ exports.logout = catchAsync(async (req, res, next) => {
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
+    //getting the token and checking if it exist
     let token;
-    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")) {
+    if (req.headers.authorization && req.headers.authorization.startsWith("bearer")) {
         token = req.headers.authorization.split(" ")[1];
-    } else if (req.cookie.jwt) {
-        token = req.cookie.jwt;
+    } else if (req.cookies.jwt) {
+        token = req.cookies.jwt;
     }
+    //console.log(token);
     if (!token) {
-        return next(new AppError("you are not logged in! log in to gain access", 401))
-    }
-    //validate the token
-    const decoded = promisify(jwt.verify)(token, process.env.JWT_SECRET);
-
-    //check if user still exist
-    const currentUser = await User.findById(decoded.id);
-    if (!currentUser) {
-        return next(new AppError("the token belonging to the user does not exist", 401));
+        return next(new AppError("you are not logged In!, log in to gain access", 403));
     }
 
-    //check if user changed password after the token was issue
-    if (!currentUser.changePassword(decoded.iat)) {
-        return next(new AppError("user password was recently changed! please log in again", 401));
+    // verify token
+    const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+    //check if user exist
+    const freshUser = await User.findById(decoded.id);
+
+    if (!freshUser) {
+        return next(new AppError("the user belonging to this token does not exist!", 403))
     }
-    //grant access to the protected route
-    req.user = currentUser;
-    res.locals.user = currentUser;
+
+    //check if user changed password after the token was issued
+    if (freshUser.changePassword(decoded.iat)) {
+        return next(new AppError("user recently changed password, please log in again", 401))
+    }
+    req.user = freshUser;
+    res.locals.user = freshUser;
     next();
 });
 
@@ -126,6 +131,26 @@ exports.forgetPassword = catchAsync(async (req, res, next) => {
         status: "success",
         message: "token sent to email!"
     });
+});
+
+exports.restrictUser = (...roles) => (req, res, next) => {
+    const { role } = req.user;
+    //console.log(role);
+    if (roles.includes(role)) {
+        return next(new AppError("you don't have permission to perform this operation", 403));
+    }
+    next();
+}
+
+exports.createAdminUser = catchAsync(async (req, res, next) => {
+    const { id } = req.params;
+
+    const user = await User.findByIdAndUpdate(id, { role: "admin" });
+
+    res.status(200).json({
+        status: "success",
+        data: user
+    })
 });
 
 exports.updatePassword = catchAsync(async (req, res, next) => {

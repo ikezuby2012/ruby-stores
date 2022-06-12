@@ -34,7 +34,17 @@ const UserSchema = new Schema({
             message: "passwords are not the same!"
         }
     },
-    role: {},
+    phone_number: { type: String },
+    role: {
+        type: String,
+        enum: {
+            values: ["user", "vendor", "admin"],
+            message: "role is either user or vendor"
+        },
+        default: "user"
+    },
+    address: { type: String },
+    country: { type: String },
     active: {
         type: Boolean,
         default: true,
