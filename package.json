@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server,js",
     "dev": "nodemon server.js",
+    "dev:prod": "cross-env NODE_ENV=production nodemon server.js",
     "client": "npm run start --prefix client",
     "server": "concurrently \"npm run dev\" \"npm run client\""
   },
@@ -39,5 +40,9 @@
     "ndb": "^1.1.5",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": "^16.14.0",
+    "npm": "8.5.2"
   }
 }
