@@ -4,7 +4,7 @@
   "description": "an e-commerce site for ruby",
   "main": "server.js",
   "scripts": {
-    "start": "node server,js",
+    "start": "node server.js",
     "dev": "nodemon server.js",
     "dev:prod": "cross-env NODE_ENV=production nodemon server.js",
     "client": "npm run start --prefix client",
