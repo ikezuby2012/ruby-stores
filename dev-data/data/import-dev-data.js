@@ -8,10 +8,10 @@ dotenv.config({
     path: "./config.env"
 });
 
-mongoose.connect(process.env.DATABASE_LOCAL, {
+mongoose.connect(process.env.DATABASE_ATLAS, {
     useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false
+    // useCreateIndex: true,
+    // useFindAndModify: false
 }).then(() => {
     console.log("database connected");
 });
