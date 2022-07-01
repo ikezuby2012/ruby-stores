@@ -8,4 +8,3 @@ built by mr zuby
 
 💯💯 fully responsive
 
-still on development mode
